@@ -10,7 +10,8 @@ type: nodejs:20
 
 variables:
     env:
-        KIBANA_PLATFORM: linux-x86_64
+        KIBANA_VERSION: '8.12.2'
+        KIBANA_PLATFORM: 'linux-x86_64'
         KIBANA_HOME: '/app/kibana'
 
 hooks:
