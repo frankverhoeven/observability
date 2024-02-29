@@ -1,0 +1,7 @@
+# https://docs.platform.sh/configuration/services/opensearch.html
+searchopen:
+    type: opensearch:2
+    disk: 256
+    configuration:
+        authentication:
+            enabled: true
