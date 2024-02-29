@@ -28,7 +28,7 @@ web:
     ## The commands section lists programs to start when the container is deployed,
     ## typically starting your application.
     commands:
-        start: ./kibana/bin/kibana --verbose  -c /app/kibana/config/kibana.yml --elasticsearch.hosts=$OPENSEARCH_HOSTS --elasticsearch.username=$OPENSEARCH_USERNAME --elasticsearch.password=$OPENSEARCH_PASSWORD
+        start: ./kibana/bin/kibana --verbose  -c /app/kibana/config/kibana.yml --elasticsearch.hosts=$OPENSEARCH_HOSTS
     locations:
         '/':
             passthru: true
