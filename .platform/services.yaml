@@ -1,6 +1,6 @@
 # https://docs.platform.sh/configuration/services/opensearch.html
 searchelastic:
-    type: elasticsearch:8.12
+    type: elasticsearch:8.12.2
     disk: 256
     configuration:
         authentication:
