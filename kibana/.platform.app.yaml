@@ -28,7 +28,7 @@ web:
     ## The commands section lists programs to start when the container is deployed,
     ## typically starting your application.
     commands:
-        start: ./kibana/bin/kibana --verbose  -c /app/kibana/config/kibana.yml --elasticsearch.hosts=$OPENSEARCH_HOSTS
+        start: ./kibana/bin/kibana --verbose  -c /app/kibana/config/kibana.yml --elasticsearch.hosts=$ELASTICSEARCH_HOSTS
     locations:
         '/':
             passthru: true
@@ -45,7 +45,7 @@ web:
 ## you will need to create a relationship for example:
 #
 relationships:
-    searchopen: 'searchopen:opensearch'
+    searchelastic: 'searchelastic:elasticsearch'
 
 # The size in megabytes of persistent disk space to reserve as part of this application.
 disk: 1024
